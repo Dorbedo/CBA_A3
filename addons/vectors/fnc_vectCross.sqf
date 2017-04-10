@@ -6,6 +6,8 @@ Description:
 
    Vectors must both be three dimensional.
 
+   DEPRECATED - Please use <vectorCrossProduct at https://community.bistudio.com/wiki/vectorCrossProduct>
+
 Parameters:
     _u the first vector.
     _v the second vector.
@@ -22,5 +24,8 @@ Author:
     Vigilante, courtesy by -=ACE=- of Simcentric,
 ---------------------------------------------------------------------------- */
 
-//Function is complete replica, deprecated
-_this call BIS_fnc_crossProduct
+#include "script_component.hpp"
+SCRIPT(vectCross2D);
+
+params ["_u","_v"];
+_u vectorCrossProduct _v;
