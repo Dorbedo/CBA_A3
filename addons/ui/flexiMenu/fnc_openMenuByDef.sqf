@@ -1,3 +1,27 @@
+/* ----------------------------------------------------------------------------
+Function: CBA_fnc_fleximenu_openMenuByDef
+
+Description:
+    Opens the fleximenu
+
+Parameters:
+    _targetType  - classname(s) of the target, the menu can be opened on, use "player" for selfinteraction <STRING> or <ARRAY>
+    _keys - DIK_KEYS <ARRAY>
+    _priority - the priority of the action <SCALAR>
+    _menuSource - the code to be executed on selection <STRING>
+    _hideOnDeath - hide the menu on death <BOOLEAN>
+
+Returns:
+    _opened - the menu is opened <BOOLEAN>
+
+Examples:
+    (begin example)
+        ["player",[],-3,"_this call TFAR_fnc_swRadioMenu",true] call cba_fnc_fleximenu_openMenuByDef;
+    (end)
+
+Author:
+    Dr. Eyeball
+---------------------------------------------------------------------------- */
 #include "\x\cba\addons\ui\script_component.hpp"
 #include "\x\cba\addons\ui_helper\script_dikCodes.hpp"
 

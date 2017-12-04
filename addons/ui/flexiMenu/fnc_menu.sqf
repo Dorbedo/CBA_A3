@@ -1,3 +1,26 @@
+/* ----------------------------------------------------------------------------
+Function: CBA_UI_fnc_setObjectMenuSource
+
+Description:
+    Opens the fleximenu
+
+Parameters:
+    _target - the menu target <OBJECT>
+    _menuSources - the menu to be displayed <ARRAY>
+
+Returns:
+    _return - Error code <NUMBER>
+        0: Success, no error
+        1: Failure, error
+
+Examples:
+    (begin example)
+        ["player",[],-3,"_this call TFAR_fnc_swRadioMenu",true] call cba_fnc_fleximenu_openMenuByDef;
+    (end)
+
+Author:
+    Dr. Eyeball
+---------------------------------------------------------------------------- */
 disableSerialization;
 //#define DEBUG_MODE_FULL
 #include "\x\cba\addons\ui\script_component.hpp"

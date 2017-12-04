@@ -1,3 +1,27 @@
+/* ----------------------------------------------------------------------------
+Function: CBA_fnc_fleximenu_add
+
+Description:
+    adds an Option to the flexiMenu
+
+Parameters:
+    0: the target of the flexiMenu. It can be "player" or classname(s) of the cursortarget, where the menu can be opened on <STRING/ARRAY>
+    1: DIK_KEYS <ARRAY>
+    2: the priority of the action <SCALAR>
+    3: MenuSource the code to be executed on selection <STRING>
+    4: hide the menu on death of the player <BOOLEAN>
+
+Returns:
+    a list of all fleximenus <ARRAY>
+
+Examples:
+    (begin example)
+        ["player",[],-3,"_this call TFAR_fnc_swRadioMenu",true] call cba_fnc_fleximenu_add;
+    (end)
+
+Author:
+    Dr. Eyeball
+---------------------------------------------------------------------------- */
 //#define DEBUG_MODE_FULL
 #include "\x\cba\addons\ui\script_component.hpp"
 
